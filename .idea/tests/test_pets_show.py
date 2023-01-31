@@ -8,7 +8,7 @@ def test_pets_show():
    pytest.driver.find_element_by_id('pass').send_keys(valid_password)
    pytest.driver.find_element_by_css_selector('button[type="submit"]').click()
 
-   assert pytest.driver.current_url == 'http://petfriends1.herokuapp.com/all_pets'
+   assert pytest.driver.current_url == 'https://petfriends.skillfactory.ru/my_pets'
 
    images = pytest.driver.find_elements_by_css_selector('.card-deck .card-img-top')
    names = pytest.driver.find_elements_by_css_selector('.card-deck .card-title')
